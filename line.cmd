@@ -1,0 +1,1 @@
+@powershell -executionpolicy bypass -File %~n0.ps1

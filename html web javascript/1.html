@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Line Notify Iframe</title>
+</head>
+<body>
+  <script>
+    window.addEventListener('message', async (event) => {
+      const message = event.data.message;
+      const token = "YOUR_LINE_NOTIFY_TOKEN";
+
+      const url = "https://notify-api.line.me/api/notify";
+      
+      const headers = new Headers({
+        "Authorization": `Bearer ${token}`,
+        "Content-Type": "application/x-www-form-urlencoded"
+      });
+
+      const body = new URLSearchParams();
+      body.append("message", message);
+
+      fetch(url, {
+        method: "POST",
+        headers: headers,
+        body: body
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        })
+        .then((data) => {
+          console.log(data);
+          event.source.postMessage({ status: 'success', message: 'Message sent successfully' }, event.origin);
+        })
+        .catch((error) => {
+          console.error("Error: ", error);
+          event.source.postMessage({ status: 'error', message: 'Failed to send message' }, event.origin);
+        });
+    });
+  </script>
+</body>
+</html>

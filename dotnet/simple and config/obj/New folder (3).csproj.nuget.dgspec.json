@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "e:\\OneDrive\\Temporary\\line api\\dotnet\\simple and config\\New folder (3).csproj": {}
+  },
+  "projects": {
+    "e:\\OneDrive\\Temporary\\line api\\dotnet\\simple and config\\New folder (3).csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "e:\\OneDrive\\Temporary\\line api\\dotnet\\simple and config\\New folder (3).csproj",
+        "projectName": "New folder (3)",
+        "projectPath": "e:\\OneDrive\\Temporary\\line api\\dotnet\\simple and config\\New folder (3).csproj",
+        "packagesPath": "C:\\Users\\Phawat\\.nuget\\packages\\",
+        "outputPath": "e:\\OneDrive\\Temporary\\line api\\dotnet\\simple and config\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Phawat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Alexinea.Extensions.Configuration.Toml": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "CommandLineParser": {
+              "target": "Package",
+              "version": "[2.9.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

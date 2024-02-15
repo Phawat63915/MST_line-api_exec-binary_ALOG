@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "0B7b/VvdvqQtKqah1lxnJlABng7mPXoeFeDh//KYCTZ2GW36MkyON1LTRCzvuDNd9RiCcgZFxT+SPDVthPrJHQ==",
+  "success": true,
+  "projectFilePath": "e:\\OneDrive\\Temporary\\line api\\dotnet\\simple\\New folder.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Phawat\\.nuget\\packages\\commandlineparser\\2.9.1\\commandlineparser.2.9.1.nupkg.sha512",
+    "C:\\Users\\Phawat\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
+    "C:\\Users\\Phawat\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Phawat\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\7.0.0\\microsoft.extensions.configuration.fileextensions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Phawat\\.nuget\\packages\\microsoft.extensions.configuration.ini\\7.0.0\\microsoft.extensions.configuration.ini.7.0.0.nupkg.sha512",
+    "C:\\Users\\Phawat\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\7.0.0\\microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Phawat\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\7.0.0\\microsoft.extensions.fileproviders.physical.7.0.0.nupkg.sha512",
+    "C:\\Users\\Phawat\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\7.0.0\\microsoft.extensions.filesystemglobbing.7.0.0.nupkg.sha512",
+    "C:\\Users\\Phawat\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

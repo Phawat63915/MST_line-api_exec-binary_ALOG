@@ -1,0 +1,1 @@
+"C:\Users\Phawat\AppData\Local\Programs\Python\Python311\Python.exe" linecall.py %*

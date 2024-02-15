@@ -1,0 +1,38 @@
+[msg1]
+message = "ddsdjhu"
+image_thumbnail = "https://i.imgur.com/1Z1Z1Z1.png"
+image_fullsize = "https://i.imgur.com/1Z1Z1Z1.png"
+image_filename = "1Z1Z1Z1.png"
+image_content_type = "image/png"
+sticker_package_id = "1Z1Z1Z1"
+sticker_id = "1Z1Z1Z1"
+notification_disabled = "false"
+
+[msg2]
+message = """\nสวัสดีครับ
+ผมชื่อ Phawat
+ยินดีที่ได้รู้จักครับ
+"""
+image_thumbnail = ""
+image_fullsize = ""
+image_filename = ""
+image_content_type = ""
+sticker_package_id = 6325
+sticker_id = 10979922
+notification_disabled = true
+
+[phawat]
+message = """\nสวัสดีครับ
+สวัสดีวันเป็นวันดี $name
+ที่ร้อนมาก เลยครับ
+"""
+image_thumbnail = ""
+image_fullsize = ""
+image_filename = ""
+image_content_type = ""
+sticker_package_id = 446
+sticker_id = 1989
+notification_disabled = true
+
+
+

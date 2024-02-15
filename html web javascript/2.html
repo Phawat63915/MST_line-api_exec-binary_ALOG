@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Line Notify Example</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.css" />
+</head>
+<body>
+  <h1>Line Notify Example</h1>
+  <form id="notifyForm">
+    <label for="message">Message:</label>
+    <input type="text" id="message" name="message" required>
+    <button type="submit">Send</button>
+  </form>
+  <iframe id="iframe" src="./1.html" style="display:none;"></iframe>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.js"></script>
+  <script>
+    const notifyForm = document.getElementById("notifyForm");
+    const messageInput = document.getElementById("message");
+    const iframe = document.getElementById("iframe");
+
+    notifyForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const message = messageInput.value;
+      sendMessage(message);
+    });
+
+    function sendMessage(message) {
+      iframe.contentWindow.postMessage({ message: message }, "*");
+    }
+
+    window.addEventListener("message", (event) => {
+      if (event.data.status === "success") {
+        console.log(event.data.message);
+        messageInput.value = "";
+        showNotification("success", "Message sent successfully");
+      } else {
+        console.error(event.data.message);
+        showNotification("error", "Failed to send message");
+      }
+    });
+
+    function showNotification(status, text) {
+      new Notify({
+        status: status,
+        title: "Line Notify",
+        text: text,
+        effect: "fade",
+        speed: 300,
+        customClass: null,
+        customIcon: null,
+        showIcon: true,
+        showCloseButton: true,
+        autoclose: true,
+        autotimeout: 3000,
+        gap: 20,
+        distance: 20,
+        type: 1,
+        position: "right top",
+      });
+    }
+  </script>
+</body>
+</html>
